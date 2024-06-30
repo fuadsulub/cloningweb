@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Heebo", sans-serif;
+  background-color: black;
+  color: white;
+}
+.container{
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.grid-container{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4,1fr);
+
+}
+.grid-container div{
+  /* background-color:#f71e82; */
+  padding: 10px;
+}
+.blogs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column:  1 / span 3;
+}
+.blogs .blog img{
+  width: 100%;
+}
+.blogs .blog .blog-title{
+  font-weight: 500px;
+  line-height: 29px;
+  font-size: 22px;
+  cursor: pointer;
+
+}
+.blogs .blog .blog-title:hover{
+ color: #ffa301;
+}
+.blogs .blog .badge-date{
+  display: flex;
+  gap:15px ;
+  
+  align-items: center;
+}
+.blogs .blog .badge-date .badge{
+font-weight:700 ;
+color: #230e00;
+line-height: 11px;
+font-size: 11px;
+background-color: #5c4010;
+padding: 8px 12px;
+margin-left: -9px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.blogs .blog .badge-date .badge:hover{
+background-color: #ffa300;
+cursor: pointer;
+}
+.blogs .blog .badge-date .date{
+  color: #767676;
+  line-height: 11px;
+  font-weight: 700;
+  font-size: 11px;
+  align-items: center;
+}
+.ads .ad{
+  background:url("https://demo.tagdiv.com/newspaper_black_pro/wp-content/uploads/2019/12/custom-rec-2.jpg") center / cover no-repeat;
+  width: 347px;
+  height: 277px;
+
+}
+.instagram .user{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.instagram .user .profile{
+  display: flex;
+}
+.instagram .user .profile img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.instagram .user .profile .user-infro{
+  display: flex;
+  flex-direction: column;
+}
+.instagram .user .profile .user-infro span:nth-child(1){
+  color: #ddd;
+  line-height: 26px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.instagram .user .profile .user-infro span:nth-child(2){
+  color: #aaa;
+  line-height: 21px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.follow{
+  background-color: transparent;
+  color: #888;
+  line-height: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid#444444;  
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+.gallery img{
+  width: 100%;
+}
+
